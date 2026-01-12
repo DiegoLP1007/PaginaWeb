@@ -1,0 +1,35 @@
+.header {
+    background-color: var(--azul);
+    color: var(--blanco);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-top {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-top a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.nav-top a:hover {
+    background-color: var(--rojo);
+}
+
+.nav-top .active {
+    background-color: var(--rojo);
+}
