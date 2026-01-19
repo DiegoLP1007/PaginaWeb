@@ -1,0 +1,174 @@
+
+body {
+    margin: 0;
+    padding-top: 120px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6f9;
+    color: #333;
+}
+
+
+.kinal-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid #ddd;
+    z-index: 1000;
+}
+
+
+.kinal-nav {
+    max-width: 1100px;
+    margin: auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.kinal-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.kinal-logo img {
+    width: 45px;
+    height: auto;
+}
+
+.kinal-logo span {
+    font-weight: bold;
+    font-size: 18px;
+    color: #1e3a8a;
+}
+
+
+.kinal-menu a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+.kinal-menu a.active {
+    color: #1e3a8a;
+}
+
+
+.kinal-submenu {
+    background: #1e3a8a;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    padding: 12px 0;
+}
+
+.kinal-submenu a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.kinal-submenu a:hover {
+    text-decoration: underline;
+}
+
+
+.hero {
+    background: linear-gradient(135deg, #1e3a8a, #274690);
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: auto;
+}
+
+
+.contenedor {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+
+.card {
+    background: white;
+    border-radius: 14px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    margin-bottom: 50px;
+}
+
+.card h2 {
+    color: #c1121f;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+
+.titulo-seccion {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 40px;
+    color: #1e3a8a;
+}
+
+
+.valores ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.valores li {
+    margin-bottom: 8px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #1e3a8a;
+    color: white;
+    margin-top: 80px;
+}
+
+
+.kinal-seccion {
+    display: none;
+}
+
+
+.kinal-seccion:target {
+    display: block;
+}
+
+
+.kinal-seccion:first-of-type {
+    display: block;
+}
+

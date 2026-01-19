@@ -2,7 +2,7 @@
     width: 100%;
     max-width: 1000px;
     background: linear-gradient(135deg, var(--azul) 0%, #192a56 100%);
-    color: var(--blanco);
+    color: #ffffff;
     padding: 80px 40px;
     text-align: center;
     border-radius: 24px;
@@ -15,9 +15,33 @@
     font-weight: 800;
     margin-bottom: 15px;
     letter-spacing: -1px;
+    color: #ffffff;
 }
 
 .hero p {
-    color: rgba(255, 255, 255, 0.8);
     font-size: 20px;
+    color: #e5e7eb;
+}
+
+.hero-perfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 80px 20px;
+    flex-wrap: wrap;
+}
+
+.hero-texto {
+    text-align: center;
+    max-width: 500px;
+}
+
+.hero-foto img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #1e3a8a;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
