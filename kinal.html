@@ -2,17 +2,37 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Fundación Kinal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundación Kinal | Rediseño Profesional Premium</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles/kinal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header class="kinal-header">
-    <div class="kinal-nav">
+<div class="top-bar">
+    <div class="top-bar-container">
+        <div class="top-info">
+            <span><i class="fas fa-phone"></i> +502 2216-0000</span>
+            <span><i class="fas fa-envelope"></i> info@kinal.org.gt</span>
+        </div>
+        <div class="top-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+</div>
 
+<header class="kinal-header">
+    <div class="kinal-nav-container">
         <div class="kinal-logo">
-            <img src="images/logos.jpg" alt="Logo Kinal">
-            <span>Fundación Kinal</span>
+            <div class="llamita-icon"></div> 
+            <div class="logo-text">
+                <span class="brand">KINAL</span>
+                <span class="sub-brand">Fundación</span>
+            </div>
         </div>
 
         <nav class="kinal-menu">
@@ -20,89 +40,194 @@
             <a href="biografia.html">Biografía</a>
             <a href="kinal.html" class="active">Kinal</a>
         </nav>
-
     </div>
 
-    <!-- SUBMENU SOLO KINAL -->
     <div class="kinal-submenu">
-        <a href="#quienes">Quiénes somos</a>
-        <a href="#areas">Áreas</a>
-        <a href="#valores">Valores</a>
-        <a href="#contacto">Contacto</a>
+        <div class="submenu-inner">
+            <a href="#quienes">Quiénes somos</a>
+            <a href="#areas">Áreas</a>
+            <a href="#noticias">Actualidad</a>
+            <a href="#valores">Valores</a>
+        </div>
     </div>
 </header>
 
 <section class="hero">
-    <h1>Fundación Kinal</h1>
-    <p>Educación integral para el desarrollo de jóvenes en Guatemala</p>
+    <div class="hero-content">
+        <h1>Fundación <span class="text-orange">Kinal</span></h1>
+        <p>Encendiendo el futuro a través del trabajo bien hecho.</p>
+        <div class="hero-btns">
+            <a href="#areas" class="btn-main">Explorar Carreras</a>
+            <a href="#quienes" class="btn-outline-white">Sobre Nosotros</a>
+        </div>
+    </div>
+    <div class="hero-overlay"></div>
 </section>
 
-<section class="contenedor">
-
-    <!-- QUIÉNES SOMOS -->
-    <section id="quienes" class="kinal-seccion">
-        <div class="card grande">
-            <h2>¿Quiénes somos?</h2>
-            <p>
-                Fundación Kinal es una institución educativa que brinda formación académica,
-                técnica y humana, orientada a preparar jóvenes responsables, competentes y
-                comprometidos con el desarrollo del país.
-            </p>
+<main class="contenedor">
+    
+    <section class="stats-container">
+        <div class="stat-item">
+            <span class="stat-number">+25k</span>
+            <span class="stat-label">Graduados</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">30+</span>
+            <span class="stat-label">Carreras</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">95%</span>
+            <span class="stat-label">Empleabilidad</span>
         </div>
     </section>
 
-    <!-- ÁREAS -->
+    <section id="quienes" class="kinal-seccion about-flex">
+        <div class="about-text">
+            <span class="tag">Nuestra Misión</span>
+            <h2>Formamos personas para el <span class="text-orange">trabajo bien hecho.</span></h2>
+            <p>
+                Desde 1961, Kinal ha transformado la vida de miles de jóvenes guatemaltecos, 
+                proporcionando herramientas técnicas y una formación en valores inquebrantable.
+            </p>
+            <button class="btn-outline">Ver nuestro Patronato</button>
+        </div>
+        <div class="about-image">
+            <div class="image-frame"></div>
+            <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=600" alt="Taller Kinal">
+        </div>
+    </section>
+
     <section id="areas" class="kinal-seccion">
-        <h2 class="titulo-seccion">Nuestras áreas de formación</h2>
-
+        <h2 class="titulo-seccion">Nuestras áreas de <span class="text-orange">formación</span></h2>
         <div class="grid">
-            <div class="card">
-                <h3>Educación Técnica</h3>
-                <p>Formación especializada para integrarse al mundo laboral.</p>
+            <div class="card area-card">
+                <div class="card-img-top technical"></div>
+                <div class="card-body">
+                    <span class="tag-sm">Técnico</span>
+                    <h3>Peritos Técnicos</h3>
+                    <p>Mecánica, Electrónica y Dibujo con estándares industriales.</p>
+                    <a href="#" class="link-arrow">Ver carreras →</a>
+                </div>
             </div>
-
-            <div class="card">
-                <h3>Educación Académica</h3>
-                <p>Disciplina, pensamiento crítico y aprendizaje continuo.</p>
+            <div class="card area-card">
+                <div class="card-img-top academic"></div>
+                <div class="card-body">
+                    <span class="tag-sm">Académico</span>
+                    <h3>Ciclo Básico</h3>
+                    <p>Sólida base científica y humanística para jóvenes de éxito.</p>
+                    <a href="#" class="link-arrow">Ver requisitos →</a>
+                </div>
             </div>
-
-            <div class="card">
-                <h3>Formación Humana</h3>
-                <p>Valores, liderazgo y responsabilidad social.</p>
+            <div class="card area-card">
+                <div class="card-img-top human"></div>
+                <div class="card-body">
+                    <span class="tag-sm">Empresarial</span>
+                    <h3>Cursos Libres</h3>
+                    <p>Especializaciones técnicas intensivas para adultos.</p>
+                    <a href="#" class="link-arrow">Ver cursos →</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- VALORES -->
+    <section class="banner-parallax">
+        <div class="banner-content">
+            <h2>"El trabajo es el medio para servir a los demás"</h2>
+            <p>Únete a la red técnica más grande de Guatemala.</p>
+        </div>
+    </section>
+
+    <section id="noticias" class="kinal-seccion">
+        <h2 class="titulo-seccion">Actualidad <span class="text-orange">Kinal</span></h2>
+        <div class="news-grid">
+            <article class="news-card tall">
+                <div class="news-overlay">
+                    <span class="news-tag">Inscripciones</span>
+                    <h3>Expo Kinal 2025: ¡Ya puedes registrarte!</h3>
+                </div>
+            </article>
+            <article class="news-card">
+                <div class="news-overlay">
+                    <span class="news-tag">Deportes</span>
+                    <h3>Final del Torneo de Fútbol</h3>
+                </div>
+            </article>
+            <article class="news-card">
+                <div class="news-overlay">
+                    <span class="news-tag">Alianza</span>
+                    <h3>Nuevo convenio con la UNIS</h3>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="partners-section">
+        <p class="tag-center center">Alianzas de Prestigio</p>
+        <div class="partners-grid">
+            <div class="partner-logo">MICROSOFT</div>
+            <div class="partner-logo">TOYOTA</div>
+            <div class="partner-logo">CEMENTOS PROGRESO</div>
+            <div class="partner-logo">BANCO INDUSTRIAL</div>
+        </div>
+    </section>
+
     <section id="valores" class="kinal-seccion">
-        <div class="card valores">
-            <h2>Valores institucionales</h2>
-            <ul>
-                <li>Disciplina</li>
-                <li>Responsabilidad</li>
-                <li>Respeto</li>
-                <li>Compromiso</li>
-            </ul>
+        <h2 class="titulo-seccion center">Nuestros <span class="text-orange">Pilares</span></h2>
+        <div class="bento-grid">
+            <div class="bento-item main-v">
+                <h3>Trabajo</h3>
+                <p>Base de la santificación personal.</p>
+            </div>
+            <div class="bento-item secondary-v">
+                <h3>Respeto</h3>
+            </div>
+            <div class="bento-item secondary-v alt">
+                <h3>Lealtad</h3>
+            </div>
+            <div class="bento-item wide-v">
+                <h3>Servicio</h3>
+                <p>Razón fundamental de nuestra fundación.</p>
+            </div>
         </div>
     </section>
+</main>
 
-    <!-- CONTACTO -->
-    <section id="contacto" class="kinal-seccion">
-        <div class="card">
-            <h2>Contacto</h2>
-            <p>
-                Dirección: Fundación Kinal, Ciudad de Guatemala<br>
-                Teléfono: +502 1234 5678<br>
-                Correo: info@kinal.org.gt
-            </p>
+<footer>
+    <div class="footer-main">
+        <div class="footer-logo-section">
+            <div class="llamita-icon"></div>
+            <h3>Fundación Kinal</h3>
+            <p>Formando personas para el trabajo bien hecho y el servicio a los demás desde hace más de 60 años.</p>
         </div>
-    </section>
+        
+        <div class="footer-links">
+            <h4>Navegación</h4>
+            <a href="#">Proceso de Admisión</a>
+            <a href="#">Calendario Académico</a>
+            <a href="#">Portal de Alumnos</a>
+            <a href="#">Bolsa de Empleo</a>
+        </div>
 
-</section>
-
-<footer id="contacto">
-    © 2026 Fundación Kinal – Diseño académico
+        <div class="footer-social-big">
+            <h4>Síguenos</h4>
+            <div class="social-icons-wrapper">
+                <a href="#" class="social-icon fb"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon ig"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon tw"><i class="fab fa-x-twitter"></i></a>
+                <a href="#" class="social-icon yt"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 Fundación Kinal – Transformando vidas a través de la educación técnica profesional.</p>
+        <p>6a avenida 13-54 zona 7, Colonia Landívar, Ciudad de Guatemala.</p>
+    </div>
 </footer>
+
+<a href="#" class="float-btn">
+    <span class="pulse"></span>
+    Inscríbete hoy
+</a>
 
 </body>
 </html>
